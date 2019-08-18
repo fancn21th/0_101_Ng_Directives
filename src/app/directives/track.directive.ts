@@ -1,5 +1,5 @@
 import { Directive, Input, HostListener } from "@angular/core";
-import { TrackingService } from "../services/tracking-service.service";
+import { TrackingService } from "../services/tracking.service";
 
 @Directive({
   selector: "[track]"
@@ -7,9 +7,9 @@ import { TrackingService } from "../services/tracking-service.service";
 export class TrackDirective {
   @Input() track;
   @HostListener("click") onClick() {
-    this.trackingService.log(this.track);
+    this.tracking.log(this.track);
     console.log(this.track);
   }
 
-  constructor(private trackingService: TrackingService) {}
+  constructor(private tracking: TrackingService) {}
 }
