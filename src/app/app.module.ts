@@ -9,6 +9,7 @@ import { TrackDirective } from "./directives/track.directive";
 import { TrackingService } from "./services/tracking.service";
 import { OnlineDirective } from "./directives/online.directive";
 import { OnlineService } from "./services/online.service";
+import { BasicComponent } from './components/basic/basic.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { OnlineService } from "./services/online.service";
     FirstDirectiveDirective,
     SecondDirectiveDirective,
     TrackDirective,
-    OnlineDirective
+    OnlineDirective,
+    BasicComponent
   ],
   imports: [BrowserModule],
   providers: [TrackingService, OnlineService],
