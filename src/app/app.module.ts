@@ -15,6 +15,8 @@ import { AnotherTemplateCompComponent } from "./components/another-template-comp
 import { FourDirective } from "./directives/four.directive";
 import { FiveDirective } from "./directives/five.directive";
 import { SixDirective } from "./directives/six.directive";
+import { TemplateService } from "./services/template.service";
+import { TemplateStorageComponent } from './components/template-storage/template-storage.component';
 
 @NgModule({
   declarations: [
@@ -29,10 +31,11 @@ import { SixDirective } from "./directives/six.directive";
     TrackDirective,
     OnlineDirective,
     BasicComponent,
-    AnotherTemplateCompComponent
+    AnotherTemplateCompComponent,
+    TemplateStorageComponent
   ],
   imports: [BrowserModule],
-  providers: [TrackingService, OnlineService],
+  providers: [TrackingService, OnlineService, TemplateService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
