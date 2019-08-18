@@ -5,7 +5,11 @@ import { OnlineService } from "../services/online.service";
   selector: "[online]"
 })
 export class OnlineDirective {
-  @HostBinding("disabled") get disabled() {
+  @HostBinding("disabled") get disabled2() {
+    return this.online.online;
+  }
+
+  @HostBinding("class.offline") get offline2() {
     return this.online.online;
   }
 
