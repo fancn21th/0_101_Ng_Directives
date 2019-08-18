@@ -12,6 +12,7 @@ import { OnlineDirective } from "./directives/online.directive";
 import { OnlineService } from "./services/online.service";
 import { BasicComponent } from "./components/basic/basic.component";
 import { AnotherTemplateCompComponent } from "./components/another-template-comp/another-template-comp.component";
+import { FourDirective } from "./directives/four.directive";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AnotherTemplateCompComponent } from "./components/another-template-comp
     FirstDirective,
     SecondDirective,
     ThreeDirective,
+    FourDirective,
     TrackDirective,
     OnlineDirective,
     BasicComponent,
