@@ -1,10 +1,15 @@
-import { Directive } from '@angular/core';
+import { Directive, HostBinding, Input, HostListener } from "@angular/core";
 
 @Directive({
-  selector: '[second]'
+  selector: "[second]"
 })
 export class SecondDirectiveDirective {
-
-  constructor() { }
-
+  @Input() second;
+  @HostBinding() get innerText() {
+    return `from directive ${this.second}`;
+  }
+  @HostListener("click", ["$event"]) onclick($event) {
+    this.second = "the element is clicked via directive";
+  }
+  constructor() {}
 }
