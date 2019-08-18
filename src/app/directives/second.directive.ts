@@ -3,7 +3,7 @@ import { Directive, HostBinding, Input, HostListener } from "@angular/core";
 @Directive({
   selector: "[second]"
 })
-export class SecondDirectiveDirective {
+export class SecondDirective {
   @Input() second;
   @HostBinding() get innerText() {
     return `from directive ${this.second}`;
