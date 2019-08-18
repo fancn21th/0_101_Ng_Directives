@@ -10,6 +10,7 @@ import { TrackingService } from "./services/tracking.service";
 import { OnlineDirective } from "./directives/online.directive";
 import { OnlineService } from "./services/online.service";
 import { BasicComponent } from './components/basic/basic.component';
+import { AnotherTemplateCompComponent } from './components/another-template-comp/another-template-comp.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BasicComponent } from './components/basic/basic.component';
     SecondDirectiveDirective,
     TrackDirective,
     OnlineDirective,
-    BasicComponent
+    BasicComponent,
+    AnotherTemplateCompComponent
   ],
   imports: [BrowserModule],
   providers: [TrackingService, OnlineService],
