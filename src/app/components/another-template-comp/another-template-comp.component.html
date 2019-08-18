@@ -1,4 +1,12 @@
-<ng-template #template>
-  this is a template in another template component
+<ng-template #foo>
+  this is a FOO template in another template component
 </ng-template>
-<div [ngTemplateOutlet]="template"></div>
+<ng-template #bar let-message="message">
+  this is a BAR template in another template component with context:
+  {{ message }}
+</ng-template>
+<div [ngTemplateOutlet]="foo"></div>
+<div
+  [ngTemplateOutlet]="bar"
+  [ngTemplateOutletContext]="{ message: 'Hello Context' }"
+></div>
