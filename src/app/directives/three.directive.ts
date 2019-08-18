@@ -14,7 +14,7 @@ export class ThreeDirective {
     private view: ViewContainerRef,
     private template: TemplateRef<any>
   ) {
-    console.log(el.nativeElement);
+    console.log("three:", el.nativeElement);
   }
 
   ngAfterViewInit() {
