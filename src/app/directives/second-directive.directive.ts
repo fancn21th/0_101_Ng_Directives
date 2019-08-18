@@ -10,6 +10,7 @@ export class SecondDirectiveDirective {
   }
   @HostListener("click", ["$event"]) onclick($event) {
     this.second = "the element is clicked via directive";
+    console.log(this.second);
   }
   constructor() {}
 }
