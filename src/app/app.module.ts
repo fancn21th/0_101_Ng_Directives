@@ -13,7 +13,8 @@ import { OnlineService } from "./services/online.service";
 import { BasicComponent } from "./components/basic/basic.component";
 import { AnotherTemplateCompComponent } from "./components/another-template-comp/another-template-comp.component";
 import { FourDirective } from "./directives/four.directive";
-import { FiveDirective } from './directives/five.directive';
+import { FiveDirective } from "./directives/five.directive";
+import { SixDirective } from "./directives/six.directive";
 
 @NgModule({
   declarations: [
@@ -23,11 +24,12 @@ import { FiveDirective } from './directives/five.directive';
     SecondDirective,
     ThreeDirective,
     FourDirective,
+    FiveDirective,
+    SixDirective,
     TrackDirective,
     OnlineDirective,
     BasicComponent,
-    AnotherTemplateCompComponent,
-    FiveDirective
+    AnotherTemplateCompComponent
   ],
   imports: [BrowserModule],
   providers: [TrackingService, OnlineService],
