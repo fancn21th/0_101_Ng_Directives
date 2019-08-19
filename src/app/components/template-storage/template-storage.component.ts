@@ -8,6 +8,7 @@ import { TemplateService } from "src/app/services/template.service";
 })
 export class TemplateStorageComponent implements OnInit {
   @ViewChild("header", { static: false }) headerTemplate;
+  @ViewChild("footer", { static: false }) footerTemplate;
 
   constructor(private service: TemplateService) {}
 
@@ -15,5 +16,6 @@ export class TemplateStorageComponent implements OnInit {
 
   ngAfterViewInit() {
     this.service.templates.set("header", this.headerTemplate);
+    this.service.templates.set("footer", this.footerTemplate);
   }
 }

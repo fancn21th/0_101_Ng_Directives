@@ -13,5 +13,7 @@ export class SurroundDirective {
 
   ngAfterViewInit() {
     this.view.createEmbeddedView(this.service.templates.get("header"));
+    this.view.createEmbeddedView(this.template);
+    this.view.createEmbeddedView(this.service.templates.get("footer"));
   }
 }
