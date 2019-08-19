@@ -17,6 +17,7 @@ import { FiveDirective } from "./directives/five.directive";
 import { SixDirective } from "./directives/six.directive";
 import { TemplateService } from "./services/template.service";
 import { TemplateStorageComponent } from './components/template-storage/template-storage.component';
+import { SurroundDirective } from './directives/surround.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TemplateStorageComponent } from './components/template-storage/template
     OnlineDirective,
     BasicComponent,
     AnotherTemplateCompComponent,
-    TemplateStorageComponent
+    TemplateStorageComponent,
+    SurroundDirective
   ],
   imports: [BrowserModule],
   providers: [TrackingService, OnlineService, TemplateService],

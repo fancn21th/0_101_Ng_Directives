@@ -1,9 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Injectable, TemplateRef } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class TemplateService {
+  templates = new Map<string, TemplateRef<any>>();
 
-  constructor() { }
+  constructor() {}
 }
