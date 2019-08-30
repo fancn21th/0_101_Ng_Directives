@@ -27,6 +27,6 @@ export class SixDirective {
     private view: ViewContainerRef,
     private template: TemplateRef<any>
   ) {
-    console.log("five:", el.nativeElement);
+    console.log("six:", el.nativeElement);
   }
 }
